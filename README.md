@@ -6,7 +6,7 @@
 ![React](https://img.shields.io/badge/React-18-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 
-This is a project I did (and still come back to) to learn Spring Boot and other parts of the Spring Framework, React (with Vite and Axios), Supabase, as well as get experience developing a working full-stack project.
+This is a project I am doing to learn Spring Boot and other parts of the Spring Framework, React (with Vite and Axios), Supabase, as well as get experience developing a working full-stack project.
 
 ## Features
 
@@ -30,13 +30,13 @@ This is a project I did (and still come back to) to learn Spring Boot and other 
     |                    Spring Boot Backend                        |
     |   Controllers --> Services --> Repositories --> JPA Entities  |
     +---------------------------------------------------------------+
-               |                            |
-               | JDBC                       | HTTP Client
-               v                            v
-      +----------------+        +---------------------------+
-      |  Supabase      |        | Alpha Vantage API         |
-      | PostgreSQL     |        | (Live market data)        |
-      +----------------+        +---------------------------+
+                  |                            |
+                  | JDBC                       | HTTP Client
+                  v                            v
+         +----------------+        +---------------------------+
+         |  Supabase      |        | Alpha Vantage API         |
+         | PostgreSQL     |        | (Live market data)        |
+         +----------------+        +---------------------------+
 ```
 
 ## API Endpoints
