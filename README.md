@@ -21,24 +21,24 @@ This is a project I did (and still come back to) to learn Spring Boot and other 
 
 ```
 
-                        +----------------------+
-                        |      React UI        |
-                        |  (Vite + Axios)      |
-                        +----------+-----------+
-                                   |
-                                   | REST API Calls
-                                   v
-+---------------------------------------------------------------+
-|                    Spring Boot Backend                        |
-|   Controllers --> Services --> Repositories --> JPA Entities  |
-+---------------------------------------------------------------+
-               |                            |
-               | JDBC                       | HTTP Client
-               v                            v
-      +----------------+        +---------------------------+
-      |  Supabase      |        | Alpha Vantage API         |
-      | PostgreSQL     |        | (Live market data)        |
-      +----------------+        +---------------------------+
+                                              +----------------------+
+                                              |      React UI        |
+                                              |  (Vite + Axios)      |
+                                              +----------+-----------+
+                                                         |
+                                                         | REST API Calls
+                                                         v
+                      +---------------------------------------------------------------+
+                      |                    Spring Boot Backend                        |
+                      |   Controllers --> Services --> Repositories --> JPA Entities  |
+                      +---------------------------------------------------------------+
+                                     |                            |
+                                     | JDBC                       | HTTP Client
+                                     v                            v
+                            +----------------+        +---------------------------+
+                            |  Supabase      |        | Alpha Vantage API         |
+                            | PostgreSQL     |        | (Live market data)        |
+                            +----------------+        +---------------------------+
 ```
 
 ## API Endpoints
