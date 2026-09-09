@@ -1,10 +1,10 @@
 # Investment Portfolio Dashboard
 
 ![Java](https://img.shields.io/badge/Java-21-red)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3-green)
-![React](https://img.shields.io/badge/React-18-blue)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4-green)
+![React](https://img.shields.io/badge/React-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-blue)
 ![Supabase](https://img.shields.io/badge/Supabase-Postgres-green)
 
 This is a project I did (and still come back to) to learn Spring Boot and other parts of the Spring Framework, React (with Vite and Axios), Supabase, as well as get experience developing a working full-stack project.
