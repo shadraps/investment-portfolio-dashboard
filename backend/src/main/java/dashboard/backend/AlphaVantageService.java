@@ -28,7 +28,7 @@ public class AlphaVantageService {
       throw new RuntimeException("Invalid ticker symbol or API error.");
     }
 
-    String priceStr = root.get("Global Quote").get("05. price").asText();
+    String priceStr = root.get("Global Quote").get("05. price").asString();
     return Double.parseDouble(priceStr);
   }
 
