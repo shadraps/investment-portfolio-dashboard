@@ -11,11 +11,11 @@ This is a project I did (and still come back to) to learn Spring Boot and other 
 
 ## Features
 
--Add stock holdings with ticker, shares, and cost basis
--Live price fetching via Alpha Vantage API
--Automatic P&L calculations (value, gain/loss, percent return)
--Portfolio summary cards
--Full CRUD via Spring Boot + Supabase PostgreSQL
+- Add stock holdings with ticker, shares, and cost basis
+- Live price fetching via Alpha Vantage API
+- Automatic P&L calculations (value, gain/loss, percent return)
+- Portfolio summary cards
+- Full CRUD via Spring Boot + Supabase PostgreSQL
 
 ## Architecture
 
