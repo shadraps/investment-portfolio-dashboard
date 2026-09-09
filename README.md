@@ -2,10 +2,9 @@
 
 ![Java](https://img.shields.io/badge/Java-21-red)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4-green)
-![React](https://img.shields.io/badge/React-blue)
-![TypeScript](https://img.shields.io/badge/TypeScript-blue)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-blue)
 ![Supabase](https://img.shields.io/badge/Supabase-Postgres-green)
+![React](https://img.shields.io/badge/React-18-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 
 This is a project I did (and still come back to) to learn Spring Boot and other parts of the Spring Framework, React (with Vite and Axios), Supabase, as well as get experience developing a working full-stack project.
 
@@ -43,8 +42,8 @@ This is a project I did (and still come back to) to learn Spring Boot and other 
 
 ## API Endpoints
 
-POST   /api/holdings
-GET    /api/holdings
-DELETE /api/holdings/{id}
-GET    /api/stock/{symbol}
-GET    /api/portfolio/summary
+POST   /api/holdings  
+GET    /api/holdings  
+DELETE /api/holdings/{id}  
+GET    /api/stock/{symbol}  
+GET    /api/portfolio/summary  
