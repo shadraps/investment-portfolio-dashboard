@@ -9,10 +9,12 @@ public class AlphaVantageService {
 
   private final RestTemplate restTemplate;
   private final String apiKey;
+  private long lastRequestTime;
 
   public AlphaVantageService() {
     this.restTemplate = new RestTemplate();
     this.apiKey = System.getenv("ALPHAVANTAGE_KEY");
+    this.lastRequestTime = System.currentTimeMillis();
   }
 
   public double getCurrentPrice(String symbol) {
@@ -22,6 +24,7 @@ public class AlphaVantageService {
             + "&apikey="
             + apiKey;
 
+    waitForRateLimit();
     JsonNode root = restTemplate.getForObject(url, JsonNode.class);
 
     if (root.has("Error Message") || !root.has("Global Quote")) {
@@ -39,6 +42,7 @@ public class AlphaVantageService {
             + "&apikey="
             + apiKey;
 
+    waitForRateLimit();
     AlphaVantageDailyResponse response =
         restTemplate.getForObject(url, AlphaVantageDailyResponse.class);
 
@@ -47,5 +51,20 @@ public class AlphaVantageService {
     }
 
     return response;
+  }
+
+  private synchronized void waitForRateLimit() {
+    long elapsed = System.currentTimeMillis() - lastRequestTime;
+    long waitTime = 1500 - elapsed;
+
+    if (waitTime > 0) {
+      try {
+        Thread.sleep(waitTime);
+      } catch (InterruptedException e) {
+        Thread.currentThread().interrupt();
+      }
+    }
+
+    lastRequestTime = System.currentTimeMillis();
   }
 }
