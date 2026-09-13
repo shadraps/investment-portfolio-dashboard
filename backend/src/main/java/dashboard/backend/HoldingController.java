@@ -21,7 +21,7 @@ public class HoldingController {
   }
 
   @GetMapping("/holdings")
-  public List<Holding> getAllHoldings() {
+  public List<HoldingDTO> getAllHoldings() {
     return holdingService.getAllHoldings();
   }
 
@@ -36,7 +36,7 @@ public class HoldingController {
   }
 
   @GetMapping("/portfolio/summary")
-  public List<HoldingSummaryDTO> getPortfolioSummary() {
+  public PortfolioSummaryData getPortfolioSummary() {
     return holdingService.getPortfolioSummary();
   }
 }

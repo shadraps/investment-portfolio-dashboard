@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class HoldingSummaryDTO {
+public class HoldingDTO {
 
   private Long id;
   private String symbol;
